@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagnik - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="sagnik(photo).jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sagnik's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="firstSection">
+        <div class="leftSection">
+          Hi There,
+          <div>I'm <span class="purple">Sagnik Roy</span></div>
+          <div>I am Into...</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="photo.png" alt="Profile" />
+        </div>
+      </section>
+      <hr />
+      <section id="about" class="secondSection">
+        <h1>About Me</h1>
+        <p>
+          I'm a passionate Web Developer, currently in my second year of
+          studying Chemical Engineering. I have experience in web development
+          technologies, including HTML, CSS, JavaScript, and frameworks like
+          React. I'm always eager to learn and improve my skills.
+        </p>
+      </section>
+      <hr />
+      <section id="services" class="secondSection">
+        <h1>Services</h1>
+        <div class="servicesContainer">
+          <div class="serviceCard">
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and efficient websites that look great on any
+              device.
+            </p>
+          </div>
+          <div class="serviceCard">
+            <h3>Front-end Development</h3>
+            <p>
+              Creating user-friendly and visually appealing interfaces using
+              HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="serviceCard">
+            <h3>Web Design</h3>
+            <p>
+              Designing clean, modern, and interactive websites focused on user
+              experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="projects" class="secondSection">
+        <h1>Projects</h1>
+        <div class="projectsContainer">
+          <div class="projectCard">
+            <img src="html logo.png" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>
+              My first full-stack website built with HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="projectCard">
+            <img src="css logo.png" alt="Project 2" />
+            <h3>Project 2</h3>
+            <p>A React-based application that showcases my front-end skills.</p>
+          </div>
+          <div class="projectCard">
+            <img src="js logo.png" alt="Project 3" />
+            <h3>Project 3</h3>
+            <p>
+              A simple portfolio website that highlights my skills and projects.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact" class="secondSection">
+        <h1>Contact Me</h1>
+        <form action="#">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+     </div>
+     <div>&copy; 2024 Sagnik Roy. All Rights Reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Front-end Developer", "Web Designer"],
+        typeSpeed: 50,
+        loop: true,
+        backSpeed: 30,
+        backDelay: 1000,
+        startDelay: 500,
+      });
+    </script>
+  </body>
+</html>
